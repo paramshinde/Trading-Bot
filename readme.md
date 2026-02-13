@@ -36,17 +36,54 @@ bash
 git clone https://github.com/your-username/binance-futures-trading-bot.git
 cd binance-futures-trading-bot
 
-##Install Dependencies
+## Install Dependencies
 pip install -r requirements.txt
 
-##Create .env File
+## Create .env File
 BINANCE_API_KEY=your_api_key
 BINANCE_API_SECRET=your_api_secret
 Use Binance Futures Testnet API keys
 
-##Testnet URL
+## Testnet URL
 https://testnet.binancefuture.com
 
-##Run the Application
+## Run the Application
 Use the CLI commands below.
-#Market Order
+
+1.Market Order
+
+python cli.py --symbol BTCUSDT --side BUY --order_type MARKET --quantity 0.002
+
+2.Limit Order
+
+python cli.py --symbol BTCUSDT --side SELL --order_type LIMIT --quantity 0.002 --price 65000
+
+
+3.Stop Order
+
+python cli.py --symbol BTCUSDT --side SELL --order_type STOP --quantity 0.002 --price 60000
+
+## Sample Output
+Order Request
+Symbol: BTCUSDT
+Side: BUY
+Type: MARKET
+Quantity: 0.002
+
+Order Placed Successfully!
+Order ID: 12237326802
+Status: NEW
+Executed Qty: 0.000
+Avg Price: 0.00
+
+Updated Order Status:
+Status: NEW
+Executed Qty: 0.000
+Avg Price: 0.00
+
+## Example log entry:
+2026-02-13 12:30:10 - INFO - Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-13 12:30:11 - INFO - Response: {'orderId': 123456789, 'status': 'NEW'}
+
+## Author
+Param Shinde
