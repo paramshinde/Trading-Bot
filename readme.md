@@ -34,6 +34,7 @@ This project demonstrates API integration, structured code design, input validat
 
 bash
 git clone https://github.com/your-username/binance-futures-trading-bot.git
+
 cd binance-futures-trading-bot
 
 ## Install Dependencies
