@@ -41,6 +41,7 @@ pip install -r requirements.txt
 Create a .env file in the root directory:
 
 BINANCE_API_KEY=your_api_key
+
 BINANCE_API_SECRET=your_api_secret
  Use Binance Futures Testnet API keys
 
