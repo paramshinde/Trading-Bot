@@ -28,27 +28,6 @@ This project demonstrates API integration, structured code design, input validat
 
 ---
 
-## 📁 Project Structure
-
-trading_bot/
-│
-├── bot/
-│ ├── init.py
-│ ├── client.py # Binance client wrapper
-│ ├── orders.py # Order placement logic
-│ ├── validators.py # Input validation
-│ └── logging_config.py
-│
-├── cli.py # CLI entry point
-├── config.py # Configuration (API keys, URLs)
-├── requirements.txt
-├── README.md
-└── logs/
-└── bot.log
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
